@@ -1,0 +1,11 @@
+f = open('NOTICE.txt')
+#print f.read()
+
+for line in f.readlines():
+        if 'janish' in line:
+            print "Janish found"
+        else:
+            print 'Janish not found'
+
+
+f.close()

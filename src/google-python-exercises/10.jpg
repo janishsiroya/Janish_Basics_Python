@@ -1,0 +1,60 @@
+a = [1,5,2,3,6,4]
+list.sort(a)
+print a
+
+print sorted (a)
+
+b = ['jan1','jan', 'jann','jan2','jannn']
+print sorted(b, reverse=True)
+
+#CUSTOM SORTING WITH KEY**********************************
+c=['a','s','dd','dddd','g','h','hh']
+print sorted(c, key=len, reverse=False)
+
+d=['BB','aa','FF','DD','bb']
+print sorted(d, key=str.lower)
+
+#DEFINING YOUR OWN FUNCTION TO SORT
+a = ['janish','ani','anish','sandeep','khushi','sandeep1']
+def myfunction(x):
+    return x[-1]
+print sorted(a, key=myfunction)
+
+#TUPLE**************
+tuple = (1,2)
+print tuple
+
+tuple = ('hi',)
+print tuple
+
+(a,b,c,d) = (1,2,3,'janish')
+print c
+
+nums = [1,2,3,4,5]
+squares = [n*n for n in nums]
+print squares
+
+str = ['jan', 'ash', 'bash']
+sh = [s.upper() + '---' for s in str]
+print sh
+
+
+#___________________
+
+a= [1,2,3,4,6,8,10]
+nums = [n for n in a if n < 5]
+print nums
+
+b= ['jan', 'ssh', 'san']
+var = [s.upper for s in b if a in b]
+print var
+
+d = [2,3,4]
+var = [a*a*a for a in d]
+print var
+
+
+
+
+
+
